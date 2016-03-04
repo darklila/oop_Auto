@@ -19,7 +19,7 @@ public class Auto {
 		
 		this.lenkrad = new Lenkrad();
 		
-		this.bremspedal=new Bremspedal();
+		this.bremspedal=new Bremspedal(this);
 		this.gaspedal=new Gaspedal();
 		
 		this.vorderradLinks=new Vorderrad();
@@ -68,6 +68,12 @@ public class Auto {
 	
 	public void fahreGeradeaus() {
 		this.lenkrad.dreheGeradeaus(this.vorderradLinks, this.vorderradRechts);
+	}
+	/**
+	 * @return the bremspedal
+	 */
+	public Bremspedal getBremspedal() {
+		return bremspedal;
 	}
 
 }

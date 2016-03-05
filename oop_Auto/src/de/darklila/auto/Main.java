@@ -7,8 +7,7 @@ public class Main {
 		meinAuto.beschleunigen();
 		meinAuto.beschleunigen();
 		meinAuto.fahreLinks();
-		//meinAuto.bremsen();
-		meinAuto.getBremspedal().druecken();
+		meinAuto.bremsen();
 		meinAuto.printStatus();
 	}
 

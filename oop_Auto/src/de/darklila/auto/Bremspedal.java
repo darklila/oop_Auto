@@ -10,7 +10,9 @@ public class Bremspedal extends Pedal {
 	
 	@Override
 	void druecken() {
-		this.auto.bremsen();
+		if (this.auto.getGeschwindigkeit() > 0) {
+			this.auto.setGeschwindigkeit(this.auto.getGeschwindigkeit()-1);
+		}
 
 	}
 
